@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Path to my memory'
+theme = 'hugo-theme-relearn'

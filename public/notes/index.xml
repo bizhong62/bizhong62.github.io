@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes :: Path to my memory</title>
+    <link>http://localhost:1313/notes/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Dec 2025 15:42:39 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Hugo</title>
+      <link>http://localhost:1313/notes/learning-hugo/index.html</link>
+      <pubDate>Thu, 18 Dec 2025 15:42:39 -0600</pubDate>
+      <guid>http://localhost:1313/notes/learning-hugo/index.html</guid>
+      <description>Install Hugo on Raspberry Pi: 1. sudo apt update 2. sudo apt install snapd Create First Hugo Site: Create a new site with following command:&#xA;hugo new site Hugosite Make the newly created Hugosite your current working directory:&#xA;cd Hugosite Create a git repository at the Hugosite root directory:&#xA;git init Create a hugo theme using submodule command:&#xA;git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn Add the following line at the end of hugo.toml file:&#xA;theme = ‘hugo-theme-relearn’ Add one page into the new site:&#xA;hugo new content Notes/Learning-Hugo.md&#xA;then add some content into the content/NotesLearning-Hugo.md file. Test the newly created site:&#xA;hugo server -D Initial result:&#xA;point your browser at http://localhost:1313, the new page should show up.</description>
+    </item>
+  </channel>
+</rss>

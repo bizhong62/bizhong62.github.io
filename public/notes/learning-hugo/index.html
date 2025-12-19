@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 8.3.0+d215bdc8e98becc2026d5c4cb9f8f03c10736245">
+    <meta name="description" content="Install Hugo on Raspberry Pi: 1. sudo apt update 2. sudo apt install snapd Create First Hugo Site: Create a new site with following command:
+hugo new site Hugosite Make the newly created Hugosite your current working directory:
+cd Hugosite Create a git repository at the Hugosite root directory:
+git init Create a hugo theme using submodule command:
+git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn Add the following line at the end of hugo.toml file:
+theme = ‘hugo-theme-relearn’ Add one page into the new site:
+hugo new content Notes/Learning-Hugo.md
+then add some content into the content/NotesLearning-Hugo.md file. Test the newly created site:
+hugo server -D Initial result:
+point your browser at http://localhost:1313, the new page should show up.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Learning Hugo :: Path to my memory">
+    <meta name="twitter:description" content="Install Hugo on Raspberry Pi: 1. sudo apt update 2. sudo apt install snapd Create First Hugo Site: Create a new site with following command:
+hugo new site Hugosite Make the newly created Hugosite your current working directory:
+cd Hugosite Create a git repository at the Hugosite root directory:
+git init Create a hugo theme using submodule command:
+git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn Add the following line at the end of hugo.toml file:
+theme = ‘hugo-theme-relearn’ Add one page into the new site:
+hugo new content Notes/Learning-Hugo.md
+then add some content into the content/NotesLearning-Hugo.md file. Test the newly created site:
+hugo server -D Initial result:
+point your browser at http://localhost:1313, the new page should show up.">
+    <meta property="og:url" content="http://localhost:1313/notes/learning-hugo/index.html">
+    <meta property="og:site_name" content="Path to my memory">
+    <meta property="og:title" content="Learning Hugo :: Path to my memory">
+    <meta property="og:description" content="Install Hugo on Raspberry Pi: 1. sudo apt update 2. sudo apt install snapd Create First Hugo Site: Create a new site with following command:
+hugo new site Hugosite Make the newly created Hugosite your current working directory:
+cd Hugosite Create a git repository at the Hugosite root directory:
+git init Create a hugo theme using submodule command:
+git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn Add the following line at the end of hugo.toml file:
+theme = ‘hugo-theme-relearn’ Add one page into the new site:
+hugo new content Notes/Learning-Hugo.md
+then add some content into the content/NotesLearning-Hugo.md file. Test the newly created site:
+hugo server -D Initial result:
+point your browser at http://localhost:1313, the new page should show up.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Notes">
+    <meta property="article:published_time" content="2025-12-18T15:42:39-06:00">
+    <meta property="article:modified_time" content="2025-12-18T15:42:39-06:00">
+    <meta itemprop="name" content="Learning Hugo :: Path to my memory">
+    <meta itemprop="description" content="Install Hugo on Raspberry Pi: 1. sudo apt update 2. sudo apt install snapd Create First Hugo Site: Create a new site with following command:
+hugo new site Hugosite Make the newly created Hugosite your current working directory:
+cd Hugosite Create a git repository at the Hugosite root directory:
+git init Create a hugo theme using submodule command:
+git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn Add the following line at the end of hugo.toml file:
+theme = ‘hugo-theme-relearn’ Add one page into the new site:
+hugo new content Notes/Learning-Hugo.md
+then add some content into the content/NotesLearning-Hugo.md file. Test the newly created site:
+hugo server -D Initial result:
+point your browser at http://localhost:1313, the new page should show up.">
+    <meta itemprop="datePublished" content="2025-12-18T15:42:39-06:00">
+    <meta itemprop="dateModified" content="2025-12-18T15:42:39-06:00">
+    <meta itemprop="wordCount" content="116">
+    <title>Learning Hugo :: Path to my memory</title>
+    <link href="/css/auto-complete/auto-complete.min.css?1766099658" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766099658" defer></script>
+    <script src="/js/search-lunr.js?1766099658" defer></script>
+    <script src="/js/search.js?1766099658" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1766099658";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1766099658" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766099658" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766099658" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766099658" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766099658" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766099658" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766099658" rel="stylesheet">
+    <link href="/css/theme.css?1766099658" rel="stylesheet">
+    <link href="/css/format-html.css?1766099658" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/notes\/learning-hugo\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/notes/learning-hugo/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#install-hugo-on-raspberry-pi">Install Hugo on Raspberry Pi:</a></li>
+    <li><a href="#create-first-hugo-site">Create First Hugo Site:</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Path to my memory</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/notes/index.html"><span itemprop="name">Notes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Learning Hugo</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/notes/index.html" title="Notes (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle"><span><i class="fa-fw fas fa-chevron-right"></i></span></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable notes" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="learning-hugo">Learning Hugo</h1>
+
+<h2 id="install-hugo-on-raspberry-pi">Install Hugo on Raspberry Pi:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<pre><code>1. sudo apt update
+2. sudo apt install snapd
+</code></pre>
+<h2 id="create-first-hugo-site">Create First Hugo Site:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>Create a new site with following command:<br>
+<strong>hugo new site Hugosite</strong></li>
+<li>Make the newly created Hugosite your current working directory:<br>
+<strong>cd Hugosite</strong></li>
+<li>Create a git repository at the Hugosite root directory:<br>
+<strong>git init</strong></li>
+<li>Create a hugo theme using submodule command:<br>
+<strong>git submodule add <a href="https://github.com/McShelby/hugo-theme-relearn.git" rel="external">https://github.com/McShelby/hugo-theme-relearn.git</a> themes/hugo-theme-relearn</strong></li>
+<li>Add the following line at the end of hugo.toml file:<br>
+<em>theme = &lsquo;hugo-theme-relearn&rsquo;</em></li>
+<li>Add one page into the new site:<br>
+<strong>hugo new content Notes/Learning-Hugo.md</strong><br>
+then add some content into the content/NotesLearning-Hugo.md file.</li>
+<li>Test the newly created site:<br>
+<strong>hugo server -D</strong></li>
+<li>Initial result:<br>
+point your browser at <a href="http://localhost:1313" rel="external">http://localhost:1313</a>, the new page should show up.</li>
+</ol>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Dec 18, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/index.html">
+          <span class="logo-title default-animation">Path to my memory</span>
+        </a>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-url="/notes/index.html"><a class="padding default-animation" href="/notes/index.html">Notes</a><ul id="R-subsections-56ddd28e5c6776f76f8fbdd8face0232" class="collapsible-menu">
+            <li class="active " data-nav-url="/notes/learning-hugo/index.html"><a class="padding" href="/notes/learning-hugo/index.html">Learning Hugo</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766099658" defer></script>
+    <script src="/js/theme.js?1766099658" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>
