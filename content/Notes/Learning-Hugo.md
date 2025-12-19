@@ -27,3 +27,7 @@ title = 'Learning Hugo'
 8. Initial result:  
     point your browser at [http://localhost:1313](http://localhost:1313), the new page should show up.
 
+## Deploy Hugosite to the github site:
+1. xxx
+2. xxx
+
