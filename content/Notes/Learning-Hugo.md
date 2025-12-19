@@ -1,6 +1,5 @@
 +++
 date = '2025-12-18T15:42:39-06:00'
-draft = true
 title = 'Learning Hugo'
 +++
 
