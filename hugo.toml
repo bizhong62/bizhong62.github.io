@@ -1,4 +1,3 @@
-baseURL = 'bizhong62.github.io'
 languageCode = 'en-us'
 title = 'Path to my memory'
 theme = 'hugo-theme-relearn'

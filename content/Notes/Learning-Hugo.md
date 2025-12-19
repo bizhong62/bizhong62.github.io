@@ -28,7 +28,7 @@ title = 'Learning Hugo'
 
 ## Deploy Hugosite to the github site:  
 1. Change the baseURL in hugo.toml file as following  
-    baseURL = 'bizhong62.github.io'
+    baseURL = 'https://bizhong62.github.io/'
 2. remove draft = true line from hugo.toml file.  
 2. Create a github account.  
 3. Create a new github public remote repository named username.github.io.  
@@ -117,9 +117,9 @@ jobs:
 ```
 7. Add .github directory and the file in it into the local repository.
 8. Run following command to push the new changes to the remote repository:
-    ** git add .github **
-    ** git commit -m'add github action file' .github **
-    ** git push -u origin main **
+    **git add .github**  
+    **git commit -m'add github action file' .github**
+    **git push -u origin main**
 9. now go to the github site. we should see a action named: Deploy Hugo site to Pages running.
 10. after it finish and successful. point your browser to https://bizhong62.github.io/
 now the site is deployed to git hub.
