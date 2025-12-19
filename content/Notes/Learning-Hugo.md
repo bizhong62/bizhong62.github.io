@@ -4,8 +4,25 @@ title = 'Learning Hugo'
 +++
 
 ## Install Hugo on Raspberry Pi:
-    1. sudo apt update
-    2. sudo apt install snapd
+1. Update Linux Repository:  
+    **sudo apt update**  
+2. Install snapd deamon:  
+    **sudo apt install snapd**  
+3. Reboot system to make change take in effect:  
+    **sudo reboot**  
+4. Install the snap core to be able to use snap:  
+    **sudo snap install core**  
+5. Now we are ready to install hugo:  
+    **sudo snap install hugo**  
+6. To verify the hugo installation and see its version:  
+    **snap list**  
+    ```
+    Name    Version             Rev    Tracking       Publisher     Notes
+    core    16-2.61.4-20250910  17276  latest/stable  canonical✓    core
+    core22  20251009            2164   latest/stable  canonical✓    base
+    hugo    0.152.2             24983  latest/stable  hugo-authors  -
+    snapd   2.72                25585  latest/stable  canonical✓    snapd
+    ```
 
 ## Create First Hugo Site:
 1. Create a new site with following command:  
@@ -116,12 +133,12 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 7. Add .github directory and the file in it into the local repository.
-8. Run following command to push the new changes to the remote repository:
+8. Run following command to push the new changes to the remote repository:  
     **git add .github**  
-    **git commit -m'add github action file' .github**
-    **git push -u origin main**
-9. now go to the github site. we should see a action named: Deploy Hugo site to Pages running.
-10. after it finish and successful. point your browser to https://bizhong62.github.io/
+    **git commit -m'add github action file' .github**  
+    **git push -u origin main**  
+9. Now go to the github site. we should see a action named: Deploy Hugo site to Pages running.
+10. After it finish and successful. point your browser to https://bizhong62.github.io/
 now the site is deployed to git hub.
 
 
