@@ -1,3 +1,15 @@
 languageCode = 'en-us'
 title = 'Path to my memory'
 theme = 'hugo-theme-relearn'
+
+[params]
+  themeVariant = ['auto', 'zen-dark']
+
+#
+# following allow embed html tag into the markdown
+#
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+   

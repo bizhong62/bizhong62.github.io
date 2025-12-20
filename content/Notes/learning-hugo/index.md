@@ -137,10 +137,28 @@ jobs:
     **git add .github**  
     **git commit -m'add github action file' .github**  
     **git push -u origin main**  
-9. Now go to the github site. we should see a action named: Deploy Hugo site to Pages running.
+9. Now go to the github site. we should see a action named: <mark>Deploy Hugo site to Pages</mark> running.
 10. After it finish and successful. point your browser to https://bizhong62.github.io/
 now the site is deployed to git hub.
 
+## Deploy HugoHome to the Nginx server(minnow):
+  1. Generate static site files:  
+      **hugo --minify**  
+    all the files needed to be deployed to the web server are located in the public directory.
 
+  2. Package the directory into a tarball:  
+      **tar -czf public.tgz public**
+
+  3. Scp the tarball onto the deployment server:  
+      **scp public.tgz minnow:/home/bizhong/OrgNotes**
+
+  4. Untar the tarball on the minnow server:  
+      **tar -xvzf public.tgz**
+
+  5. Check configuration:  
+      **sudo nginx -t**
+
+  6. Restart Nginx service:  
+      **sudo systemctl restart nginx**
 
 
