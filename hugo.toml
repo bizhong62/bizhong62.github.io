@@ -3,7 +3,8 @@ title = 'Path to my memory'
 theme = 'hugo-theme-relearn'
 
 [params]
-  themeVariant = ['auto', 'zen-dark']
+  themeVariant = ['auto', 'relearn-dark', 'relearn-light', 'zen-dark', 'zen-light']
+  themeVariantAuto = [ "relearn-dark", "relearn-light" ]   
 
 #
 # following allow embed html tag into the markdown

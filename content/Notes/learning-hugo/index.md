@@ -2,8 +2,8 @@
 date = '2025-12-18T15:42:39-06:00'
 title = 'Learning Hugo'
 +++
-
-## Install Hugo on Raspberry Pi:
+##  Setting Up Hugo Enviornment
+### Install Hugo on Raspberry Pi:
 1. Update Linux Repository:  
     **sudo apt update**  
 2. Install snapd deamon:  
@@ -23,27 +23,87 @@ title = 'Learning Hugo'
     hugo    0.152.2             24983  latest/stable  hugo-authors  -
     snapd   2.72                25585  latest/stable  canonical✓    snapd
     ```
+>
+> Since hugo is a single executable. after installation, it is ready
+> to run for SSG(static site generation).
+>
 
-## Create First Hugo Site:
+## Developing Your Hugo Site:
+### Create First Hugo Site:
 1. Create a new site with following command:  
-    **hugo new site Hugosite**
+    **hugo new site Hugosite**  
+  above command will create following directory structure:
+
 2. Make the newly created Hugosite your current working directory:  
     **cd Hugosite**
+
 3. Create a git repository at the Hugosite root directory:  
     **git init**
+
 4. Create a hugo theme using submodule command:  
     **git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn**  
+
 5. Add the following line at the end of hugo.toml file:  
     *theme = 'hugo-theme-relearn'*  
+
 6. Add one page into the new site:  
     **hugo new content Notes/Learning-Hugo.md**  
     then add some content into the content/NotesLearning-Hugo.md file.
+
 7. Test the newly created site:  
     **hugo server -D**
+
 8. Initial result:  
     point your browser at [http://localhost:1313](http://localhost:1313), the new page should show up.
 
-## Deploy Hugosite to the github site:  
+### Hugo Site Customization  
+#### Understanding Hugo Convention   
+  1. Create a new site:  
+      **hugo new site [site-name]**  
+      this will create following directory structure:  
+      ```
+      Hugosite/
+      ├── archetypes
+      │   └── default.md
+      ├── assets
+      ├── content
+      ├── data
+      ├── hugo.toml
+      ├── i18n
+      ├── layouts
+      ├── static
+      └── themes
+      ```
+    
+      **archetypes**:  this folder stores files Hugo to generates file for users.  
+      **assets**: xxx  
+      **content**:  all the site content will be stored in this directory.  
+      **data**: xxx   
+      **hugo.toml**: this is the major site configuration file.  
+      **i18n**: this folder used for multilingal support.  
+      **layouts**: this folder store html templates used to overwrite html templates provided by the theme layout folder. the site look and feel is largely determined by files in the layout folders.  
+      **static**: this folder is used to store css/js code.  
+      **themes**: this folder is used to store hugo themes.there are a lot of good themes to choose and customize.  
+
+2. Types of Hugo Page:
+    Hugo supports 3 types of page:
+    - Home page: there is only one per site. it located at content/_index.md.  
+      **hugo new --kind home _index.md**  
+    - section page: section is a folder that contaitains other page. it locates at section/_index.md.  
+      **hugo new --kind section section/_index.md**
+    - normal page: this is the normal page that contains contents.  
+      **hugo new section/page/index.md**  <mark>this is preferred method</mark>.  
+      or  
+      **hugo new section/page.md**  
+    you can find more information [here](https://gohugo.io/methods/page/kind/). By the way, do you know the difference between index.md and _index.md? 
+    check it out [here](https://gohugo.io/content-management/page-bundles/).
+  >
+  > It is recommended that each pages stay in its own folder. the folder name will be the pages name. the page file named index.md inside page folder.
+  > this way, the page and all its images could stay in the same folder.
+  >
+
+## Deploying Your Hugo Site:
+### Deploy Hugosite to the github site:  
 1. Change the baseURL in hugo.toml file as following  
     baseURL = 'https://bizhong62.github.io/'
 2. remove draft = true line from hugo.toml file.  
@@ -133,15 +193,18 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 7. Add .github directory and the file in it into the local repository.
+
 8. Run following command to push the new changes to the remote repository:  
     **git add .github**  
     **git commit -m'add github action file' .github**  
-    **git push -u origin main**  
-9. Now go to the github site. we should see a action named: <mark>Deploy Hugo site to Pages</mark> running.
-10. After it finish and successful. point your browser to https://bizhong62.github.io/
-now the site is deployed to git hub.
+    **git push -u origin main**
 
-## Deploy HugoHome to the Nginx server(minnow):
+9. Now go to the github site. we should see a action named: <mark>Deploy Hugo site to Pages</mark> running.
+
+10. After it finishes and is successful. point your browser to https://bizhong62.github.io/ to see your content.
+    now the site is deployed to git hub.
+
+### Deploy HugoHome to the Nginx server on minnow:
   1. Generate static site files:  
       **hugo --minify**  
     all the files needed to be deployed to the web server are located in the public directory.
@@ -160,5 +223,4 @@ now the site is deployed to git hub.
 
   6. Restart Nginx service:  
       **sudo systemctl restart nginx**
-
 
