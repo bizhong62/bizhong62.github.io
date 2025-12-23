@@ -1,0 +1,17 @@
+{{- define "storeOutputFormat" }}
+	{{- .Store.Set "relearnOutputFormat" "html" }}
+{{- end }}
+
+{{/*--Bizhong Hu's customization */}}
+{{- define "body" }}
+  {{ range .Pages }}
+    <p>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    </p>
+  {{ end }}
+{{- end }}
+{{/* end of Bizhong's customization */}}
+
+{{- define "menu" }}
+	{{- partial "menu.html" . }}
+{{- end }}

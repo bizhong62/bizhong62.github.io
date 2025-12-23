@@ -13,4 +13,13 @@ theme = 'hugo-theme-relearn'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+#
+# enable landing page Home in English.
+#
+[languages]
+[languages.en]
+[languages.en.params]
+landingPageName = "<i class='fas fa-home'></i> Home"
+
    
