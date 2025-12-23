@@ -105,7 +105,7 @@ title = 'Learning Hugo'
 ## Deploying Your Hugo Site:
 ### Deploy Hugosite to the github site:  
 1. Change the baseURL in hugo.toml file as following  
-    baseURL = 'https://bizhong62.github.io/'
+    baseURL = https://bizhong62.github.io
 2. remove draft = true line from hugo.toml file.  
 2. Create a github account.  
 3. Create a new github public remote repository named username.github.io.  
