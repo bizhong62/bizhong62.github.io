@@ -113,6 +113,7 @@ title = 'Learning Hugo'
 5. in the setting of this particular repository, in left hand side panel, select code and automation->page, there is a Build and deployment source pull down button: select Git Actions.
 6. Create Hugosite/.github/workflows/hugo.yaml, this file will contain the action used by github to generate HTML. copy and paste following into the file.
 ```
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
@@ -146,7 +147,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.141.0
+      HUGO_VERSION: 0.152.2
       hugo_extended_ : true
     steps:
       - name: Install Hugo CLI

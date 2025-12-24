@@ -22,4 +22,7 @@ theme = 'hugo-theme-relearn'
 [languages.en.params]
 landingPageName = "<i class='fas fa-home'></i> Home"
 
+[params.logo]
+   src = '/images/large_tiger.gif'
+
    
